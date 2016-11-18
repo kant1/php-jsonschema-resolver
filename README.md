@@ -1,6 +1,6 @@
 # PHP-JSONSCHEMA-RESOLVER
 
-This package allow you to parse a JSONSchema file and it can resolve the "ref" operator.
+This package allow you to parse a JSONSchema file and it can resolve the "$ref" operator.
 
 ```
 <?php

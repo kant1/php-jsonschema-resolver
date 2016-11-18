@@ -1,7 +1,7 @@
 {
     "name": "kant1/php-jsonschema-resolver",
-    "description": "Simple JSON Schema parser which resolve the $ref",
-    "keywords": ["JSON", "JSONSchema", "resolver", "$ref"],
+    "description": "Simple JSON Schema parser which resolve the ref operator",
+    "keywords": ["JSON", "JSONSchema", "resolver", "ref"],
     "type": "library",
     "license": "LGPL-3.0",
     "authors": [
