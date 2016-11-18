@@ -1,0 +1,76 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "My API",
+        "description": "API",
+        "version": "1.0.0",
+        "contact": {
+            "name": "Quentin DORE",
+            "email": "kant1dore@gmail.com"
+        },
+        "license": {
+            "name": "LGPL3"
+        }
+    },
+    "host": "example.com",
+    "schemes": [
+        "https"
+    ],
+    "basePath": "/api/v1/",
+    "produces": [
+        "application/json"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "paths":{
+        "/test":{
+            "get":{
+                "tags":[
+                  "Test"
+                ],
+                "parameters":[
+
+                ],
+                "description": "GET Test",
+                "responses": {
+                    "200": {
+                        "description": "List of WorkSummary",
+                        "schema": {
+                            "$ref":"#/definitions/TEST"
+                        }
+                    },
+                    "default": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/TEST2"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions":{
+        "TEST":{
+            "type":"object",
+            "required":["id"],
+            "properties":{
+                "id":{
+                    "type":"string"
+                },
+                "obj":{
+                    "$ref":"#/definitions/TEST2"
+                }
+            }
+        },
+        "TEST2":{
+            "type":"object",
+            "required":["label"],
+            "properties":{
+                "label":{
+                    "type":"string"
+                }
+            }
+        }
+    }
+}

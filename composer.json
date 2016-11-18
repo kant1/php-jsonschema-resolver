@@ -1,0 +1,21 @@
+{
+    "name": "kant1/php-jsonschema-resolver",
+    "description": "Simple JSON Schema parser which resolve the $ref",
+    "keywords": ["JSON", "JSONSchema", "resolver", "$ref"],
+    "type": "library",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Quentin DORE",
+            "email": "kant1dore@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kant1\\": "./src/"
+        }
+    }
+}
